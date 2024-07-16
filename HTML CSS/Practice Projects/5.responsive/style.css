@@ -89,3 +89,22 @@ span{
 #large{
     font-size:25px;
 }
+
+@media screen and (max-width: 600px) {
+    .row{
+        display:block;
+    }
+    .homepage{
+        margin-top:20px;
+    }
+    .nav ul{
+        width:100%;
+    }
+    .main{
+        width:100%;
+    }
+    aside{
+        width:100%;
+    }
+}
+  
