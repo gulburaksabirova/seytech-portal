@@ -1,0 +1,16 @@
+.tree{
+    background-image: url("https://www.wallpaperflare.com/static/928/202/322/stars-trees-space-nature-wallpaper-preview.jpg");
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:red;
+    text-align: center;
+    font-size:60px;
+    transform: translate(-50%, -50%);
+}
