@@ -1,0 +1,45 @@
+@import url(https://db.onlinewebfonts.com/c/ee9965a149a7fc1ab6bc75101294d310?family=Madera+W01+UltraLight);
+body{
+    margin:0;
+    padding:0;
+    font-family: "Madera W01 UltraLight";
+}
+.form{
+    background-color: #3a3027;
+    color:white;
+    padding-left:65px;
+    margin:0 150px 0 150px;
+}
+h1{
+    padding-top:110px;
+}
+label{
+    display:inline-block;
+}
+.info label{
+    padding: 10px;
+    padding-left:50px;
+}
+.info input, #date,.check #level{
+    margin-left:300px;
+}
+.info #address{
+    margin-left:287px;
+}
+::placeholder{
+    color:#7f4406;
+}
+
+.check #level, .date{
+    margin:10px;
+}
+.male, .date, #check, #essay{
+    padding-left:50px;
+}
+::placeholder{
+    color:#7e4204;
+}
+
+button{
+    color:#7e4204;
+}
