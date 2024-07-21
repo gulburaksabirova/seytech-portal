@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Calculator</title>
+</head>
+<body>
+    <h1>The Calculator</h1>
+    <script>
+        
+       function squareNumber(num){
+        const squared = num * num;
+        console.log(`The result of squaring the number ${num} is ${squared}`);
+        return squared;
+       }
+       const squareNum = squareNumber(4);
+
+
+       function halfNumber(num1){
+        const halfed = num1 / 2;
+        console.log(`Half of ${num1} is ${halfed}`);
+        return halfed;
+       }
+
+       const halfedNum = halfNumber(460);
+
+       function percentOf(number1, number2){
+        const percent = number1 / number2 * 100;
+        console.log(`${number1} is ${Math.ceil(percent)}% of ${number2}`);
+        return percent;
+       }
+
+       const percentage = percentOf(200, 435);
+
+       function areaOfCircle(radius){
+        const area = Math.PI * Math.pow(radius, 2);
+        console.log(`The area for a circle with radius ${radius} is ${Math.floor(area)}`);
+        return area;
+    }
+
+    const areaOfC  = areaOfCircle(78);
+
+    function someFunction(number3){
+        const half = halfNumber(number3); 
+        const areaOfACircle = Math.floor(Math.PI * Math.pow(half, 2));
+        const percentageOfArea = percentOf(areaOfACircle, half);
+        return percentageOfArea;
+    }
+   
+    const result = someFunction(9);
+    console.log(`Final result: ${result}`);
+       
+</script>
+</body>
+</html>
