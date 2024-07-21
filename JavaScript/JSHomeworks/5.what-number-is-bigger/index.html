@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What number is bigger?</title>
+</head>
+<body>
+    <h1>What number is bigger?</h1>
+   
+    <script>
+        function compareNumbers (a, b){
+            if (a > b){
+                return `The number ${a} is bigger than number ${b}`;
+            } else if(a < b){
+                return `The number ${a} is smaller than the number ${b}`;
+            }else if (a === b){
+                return ` The number ${a} is equal to the umber ${b}`;
+            }else{
+                return `Please provide a number`;
+            }
+        }
+      
+        console.log(compareNumbers(2, 4));
+        console.log(compareNumbers(4, 2));
+        console.log(compareNumbers(4, 4));
+        console.log(compareNumbers(2, "abc"));
+    </script>
+</body>
+</html>
