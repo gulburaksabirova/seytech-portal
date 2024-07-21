@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluralize</title>
+</head>
+<body>
+    <h1>Pluralize</h1>
+    <script>
+
+        function pluralize(num, word){
+           if(num > 1 ){
+                if(word === "sheep"){
+                    return `${num} ${word}`;
+                }else if(word === "goose"){
+                    return `${num} geese`;
+                }
+                return `${num}${word}s`;
+           }else{
+                return `${num} ${word}`;
+           }
+        }
+        console.log(pluralize(5, "cat"));
+        console.log(pluralize(1, "dog"));
+        console.log(pluralize(5, "sheep"));
+        console.log(pluralize(10, "goose"));
+        console.log(pluralize(1, "cat"));
+    </script>
+    
+</body>
+</html>
