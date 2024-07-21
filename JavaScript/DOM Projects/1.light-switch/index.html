@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Switch</title>
+</head>
+<body>
+    <h1>Light Switch</h1>
+    <h2>Turn the light on and off by clicking the bulb!</h2>
+    <img id="image" src="https://learn.seytech.co/assets/projects/js/dom-projects/light-switch/lighton.png">
+
+    <script>
+
+        // document.getElementById("image").addEventListener("click", function(){
+        //     if(document.getElementById("image").src == "https://learn.seytech.co/assets/projects/js/dom-projects/light-switch/lighton.png"){
+        //         document.getElementById("image").src = "https://learn.seytech.co/assets/projects/js/dom-projects/light-switch/lightoff.png";
+        //         }else{
+        //         document.getElementById("image").src = "https://learn.seytech.co/assets/projects/js/dom-projects/light-switch/lighton.png";
+        //         }
+        // });
+
+        const lightoff = "https://learn.seytech.co/assets/projects/js/dom-projects/light-switch/lightoff.png";
+        const lighton = "https://learn.seytech.co/assets/projects/js/dom-projects/light-switch/lighton.png";
+
+        // document.getElementById("image").addEventListener("click", function(){
+        //     if(document.getElementById("image").src === lightoff){
+        //         document.getElementById("image").src = lighton
+        //     }else{
+        //         document.getElementById("image").src = lightoff
+        //     }
+        // })
+        
+        // const turnOnOff =()=>{
+        //     if(document.getElementById("image").src === lightoff){
+        //         document.getElementById("image").src = lighton
+        //     }else{
+        //         document.getElementById("image").src = lightoff
+        //     }
+        // }
+        const turnOnOff = (event) =>{
+            if(event.target.src === lightoff){
+                event.target.src = lighton
+            }else{
+                event.target.src = lightoff
+            }
+        }
+        document.getElementById("image").addEventListener("click", turnOnOff);
+
+        
+    </script>
+</body>
+</html>
