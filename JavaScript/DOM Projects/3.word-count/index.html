@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Type a word in the box</h1>
+        <input type="text" id="text" placeholder="type a word"><br>
+        <button onclick ="calc()">Click to calculate word length</button>
+        <h4 id="result"></h4>
+    </div>  
+    <script>
+        const calc = () =>{
+            const val = document.querySelector("#text").value;
+            const words = val.split(" ");
+            document.querySelector("#result").innerHTML = words.length;
+        }
+        const sentence = "Welcome to Seytech family";
+        const words = sentence.split(" ")
+    </script>
+</html>
