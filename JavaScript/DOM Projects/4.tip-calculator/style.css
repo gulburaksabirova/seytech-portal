@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(to left, #8E0E00, #1F1C18)
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#f7f7f7;
+    
+    /* height: 100vh; */
+    /* display:flex;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width:300px;
+    /* height:600px;
+    border-radius:15px; */ 
+} 
+.container h1{
+    background-color: #1f030c;
+    margin-top:0;
+}
