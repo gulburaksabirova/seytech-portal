@@ -23,7 +23,7 @@ body{
     justify-content:center;
     align-items:center;
 }
-#button{
+#submit{
     background-color: var(--lightBlue);
     color:var(--mainwhite);
     width:110px;
@@ -31,7 +31,7 @@ body{
     border:none;
     border-radius:5px;
 }
-button:hover{
+#submit:hover{
     color:var(--mainblack);
     cursor: pointer;
 }
@@ -40,9 +40,10 @@ button:hover{
 }
 h3{
     text-align: center;
+    text-transform: capitalize;
 }
-#input{
-    width:90%;
+#text{
+    width:90%;;
     height:25px;
 }
 input:focus{
