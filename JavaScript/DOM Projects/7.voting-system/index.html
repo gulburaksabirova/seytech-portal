@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <style>
+
+        .box{
+            width:300px;
+            border:1px solid grey;
+            text-align:center;
+            display:inline-block;
+        }
+        .btn{
+            background-color:green;
+            color: white;
+            width:250px;
+            margin:10px;
+        }
+        .footer{
+            background-color:lightgrey;
+            padding:5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--1-->
+    <!-- <div class="box">
+        <img src="barcelona.png">
+        <h4>FC Barcelona</h4>
+        <button id="btn" onclick="vote1()">Vote</button>
+        <div class="footer">Vote count: <span id="result1">0</span></div>
+    </div>
+    <div class="box">
+        <img src="juventus.png">
+        <h4>Juventus F.C</h4>
+        <button id="btn" onclick="vote2()">Vote</button>
+        <div class="footer">Vote count: <span id="result2">0</span></div>
+    </div>
+    <div class="box">
+        <img src="manchester.png">
+        <h4>Manchester United F.C</h4>
+        <button id="btn" onclick="vote3()">Vote</button>
+        <div class="footer">Vote count: <span id="result3">0</span></div>
+    </div>
+    <script>
+        let counter1 = 0;
+        let counter2 = 0;
+        let counter3 = 0;
+       const vote1 = ()=>{
+        counter1++;
+        document.querySelector("#result1").innerHTML = counter1;
+       }
+       const vote2 = ()=>{
+        counter2++;
+        document.querySelector("#result2").innerHTML = counter2;
+       }
+       const vote3 = ()=>{
+        counter3++;
+        document.querySelector("#result3").innerHTML = counter3;
+       }
+    </script> -->
+
+    <div class="box">
+        <img src="barcelona.png">
+        <h4>Barcelona</h4>
+        <button class="btn" onclick="vote()">Vote</button>
+        <div class="footer">Vote count: <span class="result">0</span></div>
+    </div>
+    <div class="box">
+        <img src="juventus.png">
+        <h4>Juventus</h4>
+        <button class="btn" onclick="vote()">Vote</button>
+        <div class="footer">Vote count: <span class="result">0</span></div>
+    </div>
+    <div class="box">
+        <img src="manchester.png">
+        <h4>Manchester</h4>
+        <button class="btn" onclick="vote()">Vote</button>
+        <div class="footer">Vote count: <span class="result">0</span></div>
+    </div>
+    <script>
+        const vote = (e) => {
+            const box = e.target.parentElement;
+            const result = box.querySelector(".result");
+            result.innerHTML = Number(result.innerHTML) + 1;
+        }
+        document.querySelectorAll(".btn")[0].addEventListener("click", vote);
+        document.querySelectorAll(".btn")[1].addEventListener("click", vote);
+        document.querySelectorAll(".btn")[2].addEventListener("click", vote);
+    </script>
+</body>
+</html>
