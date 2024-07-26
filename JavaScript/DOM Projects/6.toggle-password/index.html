@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>Password:</div>
+    <input id="text" type="password">
+    <div><input type="checkbox" id="checkbox" onclick = "toggle()">Show Password</div>
+    <script>
+        function toggle(){
+            const checkbox = document.querySelector("#checkbox");
+
+            if(checkbox.checked ===true){
+                document.querySelector("#text").setAttribute("type", "text")
+            }else{
+                document.querySelector("#text").setAttribute("type", "password")
+            }
+        }
+    </script>
+</body>
+</html>
