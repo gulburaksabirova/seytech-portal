@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <style>
+        body{
+            background-color: #f1f5f8;
+        }
+        h2{
+            color:#063251;
+            letter-spacing:2px;
+        }
+        .container{
+            width:600px;
+            background-color:white;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            margin-left:350px;
+        }
+        input{
+            background-color:#f1f5f8;
+            border-radius:5px;
+            border:none;
+        }
+        #cleanButton{
+            background-color:white;
+            border:none;
+            text-align:center;
+            color:red;
+            letter-spacing: 3px;
+            border:none;
+            padding:10px;
+            margin:10px;
+
+        }
+        #cleanButton:hover{
+            color:darkred;
+        }
+        #submit{
+            background-color:#a5d5f8;
+            border:none;
+            border-radius:5px;
+        }
+        #submit:hover{
+            color:white;
+            background-color:lightblue;
+        }
+        #text:hover{
+            border:1px solid orange;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Todo List</h2>
+        <div id="inputDiv">
+            <input id = "text" type="text" placeholder="e.g. learn react"><button id = "submit" onclick="submit()">Submit</button>
+        </div>
+        <button id="cleanButton" onclick="clean()">Clear Items</button>
+        <ul id="list">
+            <li>to do2</li>
+            <li>to do3</li>
+        </ul>
+    </div>
+    <script>
+        const submit = ()=>{
+            const todo = document.querySelector("#text").value;
+            if(todo.length){
+                document.querySelector("#list").innerHTML += `<li>${todo}</li>`;
+            }
+        }
+        const clean = ()=>{
+                document.querySelector("#list").innerHTML = "";
+            }
+    </script>
+</body>
+</html>
